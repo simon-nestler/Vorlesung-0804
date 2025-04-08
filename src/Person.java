@@ -24,6 +24,18 @@ public class Person {
         this.mutter = mutter;
     }
 
+    public Person getMutter() {
+        return mutter;
+    }
+
+    public Person getUrahnin() {
+        if (mutter == null) {
+            return this;
+        } else {
+            return mutter.getUrahnin();
+        }
+    }
+
     public String toString() {
         return "Person {" +
                 "name='" + name + '\'' +
