@@ -22,4 +22,8 @@ public class Person {
                 "name='" + name + '\'' +
                 '}';
     }
+
+    public void sagHallo() {
+        System.out.println("Hallo, ich bin " + name);
+    };
 }
